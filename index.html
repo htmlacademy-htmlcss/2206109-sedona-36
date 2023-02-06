@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Sedona</title>
   </head>
+
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a class="logo-link" href="index.html">
-          <img class="logo-link" src="Images/logo.png" width="140" height="70.05" alt="логотип Седоны"></a>
+          <img class="logo-link" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны."></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -24,13 +25,14 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="Images/Icons/Icon-Search.svg" width="20" height="20" alt="Поиск">
+              <img src="images/icons/icon-search.svg" width="20" height="20" alt="Поиск.">
             </a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Иконка лайка</span>
-              <img src="Images/Icons/Icon-Heart.svg" width="20" height="20" alt="Лайк">
+              <span class="navigation-user-link-text">12</span>
+              <img src="images/icons/icon-heart.svg" width="20" height="20" alt="Лайк.">
             </a>
           </li>
           <li class="navigation-user-item">
@@ -42,10 +44,9 @@
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="hero-image" src="Images/Hero.jpg" width="1200" height="485" alt="изображение пейзажа гор">
-        <img class="hero-image-text" src="Images/Welcome-1.svg" alt="Надпись 1">
-        <img class="hero-image-text" src="Images/welcome-2.svg" alt="Надпись 2">
-        <img class="hero-image-text" src="Images/welcome-3.svg" alt="Надпись 3">
+        <img class="hero-image" src="images/hero.jpg" width="1200" height="485" alt="Изображение пейзажа гор.">
+        <img class="hero-image-text" src="images/welcome.svg" width="458" height="352"
+          alt="Приветственная надпись Welcome to the gorgeous Sedona. Because The Grand Canyon Sucks!">
       </section>
       <section class="advantages">
         <h2 class="advantages-heading">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
@@ -54,7 +55,8 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-photo" src="Images/photo-main-1.jpg" width="800" alt="изображение городка Седона">
+            <img class="advantages-photo" src="images/photo-main-1.jpg" width="800" height="385"
+              alt="Изображение городка Седона.">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -69,8 +71,8 @@
             <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <img class="advantages-photo" src="Images/photo-main-2.jpg" width="800"
-              alt="изображение моста дьявола в горах">
+            <img class="advantages-photo" src="images/photo-main-2.jpg" width="800" height="385"
+              alt="Изображение моста дьявола в горах.">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -81,17 +83,17 @@
         <p class="services-text">Опытный персонал и качественное обслуживание!</p>
         <ul>
           <li class="services-item">
-            <img src="Images/Icons/Icon-Accomodation.svg" width="75" height="72" alt="Иконка Жильё">
+            <img src="Images/Icons/Icon-Accomodation.svg" width="75" height="72" alt="Иконка Жильё.">
             <h3 class="services-title">Жильё</h3>
             <p class="services-text">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
           </li>
           <li class="services-item">
-            <img src="Images/Icons/Icon-Food.svg" width="74" height="70" alt="Иконка Еда">
+            <img src="Images/Icons/Icon-Food.svg" width="74" height="70" alt="Иконка Еда.">
             <h3 class="services-title">Еда</h3>
             <p class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="services-item">
-            <img src="Images/Icons/Icon-Souvenirs.svg" width="64" height="76" alt="Иконка Сувениры">
+            <img src="Images/Icons/Icon-Souvenirs.svg" width="64" height="76" alt="Иконка Сувениры.">
             <h3 class="services-title">Сувениры</h3>
             <p class="services-text">Не только китайского,но и настоящего местного производства!</p>
           </li>
@@ -122,19 +124,29 @@
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
-              <img src="Images/Icons/Icon-VK.svg" width="24" height="14" alt="Ссылка на ВКонтакте">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
+                <path fill="#83B3D3" fill-rule="evenodd"
+                  d="M24.116 1.804c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.804c0-.656-.184-.948-.74-.948H9.817c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513V7.76c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885-.249-.715-.5-1.003-1.172-1.003H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.67 0 1.875-.369 1.875-1.004V11.54c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                  clip-rule="evenodd" />
+              </svg>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
-              <img src="Images/Icons/Icon-Telegram.svg" width="18" height="15.1" alt="Сссылка на Телеграм">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
+                <path fill="#83B3D3"
+                  d="M16.785.956.84 7.104C-.248 7.541-.24 8.148.64 8.42l4.094 1.277 9.472-5.976c.448-.272.857-.126.52.173l-7.673 6.925H7.05l.002.001-.283 4.22c.414 0 .597-.19.829-.414l1.988-1.934 4.136 3.055c.762.42 1.31.205 1.5-.706l2.715-12.795c.278-1.114-.425-1.618-1.153-1.29Z" />
+              </svg>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб </span>
-              <img src="Images/Icons/Icon-Youtube.svg" width="22" height="17" alt="Ссылка на Ютуб">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+                <path fill="#83B3D3"
+                  d="M18.94.356H3.507C1.647.356.333 1.95.333 3.756V13.85c0 1.913 1.314 3.506 3.174 3.506H19.16c1.642 0 3.174-1.593 3.174-3.4v-10.2c-.219-1.806-1.532-3.4-3.393-3.4ZM7.995 12.894V4.819l7.333 4.037-7.333 4.038Z" />
+              </svg>
             </a>
           </li>
         </ul>
