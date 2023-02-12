@@ -88,6 +88,10 @@ body {
   height: 28px;
 }
 
+.subscription {
+  background-image: url("/images/background-subscribtion.jpg");
+  background-repeat: no-repeat;
+}
 .contacts-phone {
   color: #000000;
   font-weight: 400;
