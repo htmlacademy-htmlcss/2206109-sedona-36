@@ -91,6 +91,8 @@ body {
 .subscription {
   background-image: url("/images/background-subscribtion.jpg");
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 415px;
 }
 .contacts-phone {
   color: #000000;
@@ -106,4 +108,12 @@ body {
   width: 115px;
   height: 33px;
   color: #000000;
+}
+
+/*Catalog*/
+.main-inner {
+  background-image: url("/images/background-catalog.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 412px;
 }
