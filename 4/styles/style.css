@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #fbfbfb;
+}
+
+.navigation-link {
+  line-height: 24px;
+  font-weight: 700px;
+  text-align: left;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.main-index {
+  background-image: url("images/hero.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+/* advantages*/
+
+.advantages {
+
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width: 175px;
+  height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  text-align: center;
+  vertical-align: top;
+}
+
+.advantages-item {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Services */
+.services {
+  background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 385px;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width: 230px;
+  height: 28px;
+}
+
+.services-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  width: 230px;
+  height: 28px;
+}
+
+.subscription {
+  background-image: url("/images/background-subscribtion.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 415px;
+}
+.contacts-phone {
+  color: #000000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40p;
+  width: 331px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.copyright-link {
+  width: 115px;
+  height: 33px;
+  color: #000000;
+}
+
+/*Catalog*/
+.main-inner {
+  background-image: url("/images/background-catalog.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 412px;
+}
