@@ -14,9 +14,10 @@
   font-display: swap;
 }
 
-::after
-::before {
-box-sizing: border-box;
+*,
+*::after
+*::before {
+  box-sizing: border-box;
 }
 
 body {
@@ -36,10 +37,11 @@ body {
   text-decoration: none;
 }
 
-
 /* advantages*/
 
-.advantages {}
+.advantages {
+
+}
 
 .advantages-title {
   font-weight: 700;
@@ -49,7 +51,9 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-list {}
+.advantages-list {
+
+}
 
 .advantages-item {
   font-size: 18px;
@@ -57,7 +61,9 @@ body {
 }
 
 /* Services */
-.services {}
+.services {
+
+}
 
 .services-title {
   font-weight: 700;
@@ -67,14 +73,37 @@ body {
 
 .services-text {
   font-weight: 400;
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
 }
 
+.booking-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.booking-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .subscription {
-  background-image: url("/images/background-subscribtion.jpg");
+  background-image: url("../images/background-subscribtion.jpg");
   background-repeat: no-repeat;
+}
+
+.subscription-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscription-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .contacts-phone {
@@ -94,6 +123,68 @@ body {
 
 /*Catalog*/
 .main-inner {
-  background-image: url("/images/background-catalog.jpg");
+  background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link {
+  color: #000000;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-stars {
+
+}
+
+.hotel-card-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
