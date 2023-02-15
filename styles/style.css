@@ -20,13 +20,21 @@
   box-sizing: border-box;
 }
 
+.page-header {
+background-color: #F2F2F2;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  background-color: #fbfbfb;
+  background-color: #F2F2F2;
+}
+
+.main-index{
+  background-color:#F2F2F2;
 }
 
 .navigation-link {
@@ -104,6 +112,10 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+
+.page-header {
+  background-color: #F2F2F2;
 }
 
 .contacts-phone {
