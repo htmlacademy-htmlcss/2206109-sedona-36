@@ -131,11 +131,21 @@ body {
 .advantages-item--long {
   width: 67%;
 }
-/* Services */
-.services {
-  display: flex;
 
+.advantages-item--color-blue {
+  background: #82B3D3;
 }
+
+.advantages-item--color-rgba-ligt {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item--color-rgba-dark {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+/* Services */
+.services {}
 
 .services-title {
   font-weight: 700;
@@ -147,6 +157,18 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.services-item {
+text-align: center;
+height: 385px;
 }
 
 .booking-title {
@@ -162,7 +184,9 @@ body {
 }
 
 .subscription {
+  min-height: 415px;
   background-image: url("../images/background-subscribtion.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
