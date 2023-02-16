@@ -15,26 +15,38 @@
 }
 
 *,
-*::after
-*::before {
+*::after *::before {
   box-sizing: border-box;
 }
 
-.page-header {
-background-color: #F2F2F2;
+html {
+  height: 100%;
 }
 
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
+.page-header {
   background-color: #F2F2F2;
 }
 
-.main-index{
-  background-color:#F2F2F2;
+.main-index {
+  background-color: #F2F2F2;
+}
+
+.page-header {
+  background-color: #FFFFFF;
+
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 580px;
 }
 
 .navigation-link {
@@ -45,10 +57,46 @@ body {
   text-decoration: none;
 }
 
+.navigation-user {
+  max-width: 220px;
+  margin-left: auto;
+  list-style: none;
+}
+
+.logo {
+  display: block;
+  justify-content: flex-start;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 /* advantages*/
 
 .advantages {
-
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-title {
@@ -60,16 +108,20 @@ body {
 }
 
 .advantages-list {
-
+  box-sizing: border-box;
+  height: 385px;
+  list-style: none;
 }
 
 .advantages-item {
+  width: 400px;
   font-size: 18px;
   line-height: 21px;
 }
 
 /* Services */
 .services {
+  display: flex;
 
 }
 
@@ -114,8 +166,23 @@ body {
   line-height: 26px;
 }
 
-.page-header {
-  background-color: #F2F2F2;
+.page-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  max-width: 165px;
+  margin-right: 250px;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.contacts {
+  max-width: 331px;
 }
 
 .contacts-phone {
@@ -125,6 +192,11 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.copyright {
+  max-width: 115px;
+  margin-left: auto;
 }
 
 .copyright-link {
@@ -183,9 +255,7 @@ body {
   line-height: 21px;
 }
 
-.hotel-card-stars {
-
-}
+.hotel-card-stars {}
 
 .hotel-card-rating {
   font-weight: 400;
