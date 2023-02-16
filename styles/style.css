@@ -31,11 +31,6 @@ html {
   background-color: #F2F2F2;
 }
 
-.page-header {
-  background-color: #FFFFFF;
-
-}
-
 .navigation {
   display: flex;
   width: 1200px;
@@ -88,6 +83,16 @@ body {
 
 .main-container {
   flex-grow: 1;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/hero.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
 }
 
 /* advantages*/
