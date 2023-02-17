@@ -167,8 +167,8 @@ body {
 }
 
 .services-item {
-text-align: center;
-height: 385px;
+  text-align: center;
+  height: 385px;
 }
 
 .booking-title {
@@ -261,6 +261,10 @@ height: 385px;
   color: #000000;
 }
 
+.catalog-sort-list {}
+
+.catalog-sort-item {}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -285,6 +289,27 @@ height: 385px;
   line-height: 28px;
 }
 
+.hotel-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: flex-start;
+  list-style: none;
+
+}
+
+.hotel-card-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 385px;
+  text-align: center;
+  list-style: none;
+  width: 340px;
+}
+
+
 .hotel-card-price {
   font-weight: 400;
   font-size: 18px;
@@ -299,8 +324,22 @@ height: 385px;
   line-height: 20px;
 }
 
+/*
+.pagination {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
 .pagination-item {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  color: #FFFFFF;
 }
+
+.pagination-link {
+background-color: #82B3D3;
+color: #FFFFFF;
+text-decoration: none;
+  line-height: 36px;
+} */
