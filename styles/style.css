@@ -94,6 +94,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   align-items: center;
+  height: 485px;
 }
 
 /* advantages*/
@@ -112,11 +113,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
   display: flex;
-  min-height: 385px;
+
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -137,11 +140,17 @@ body {
 .advantages-item-wrapper {
   width: 400px;
   min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .advantages-item-size {
   width: 400px;
   min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Services */
@@ -354,21 +363,27 @@ body {
 
 .pagination {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .pagination-item {
+  display: flex;
+ align-items: center;
+ justify-content: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
   width: 60px;
   height: 60px;
-
 }
 
 .pagination-link {
