@@ -24,24 +24,21 @@ html {
   height: 100%;
 }
 
-.page-header {
-  background-color: #F2F2F2;
-}
+.page-header {}
 
-.main-index {
-  background-color: #F2F2F2;
-}
+.main-index {}
 
 .navigation {
   display: flex;
   margin: 0 auto;
+  align-items: center;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 580px;
+  display: flex;
 }
 
 .navigation-link {
@@ -53,9 +50,10 @@ html {
 }
 
 .navigation-user {
-  max-width: 220px;
-  margin-left: auto;
+  margin: 0 0 0 auto;
+  padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .logo {
@@ -72,12 +70,16 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
+  display: flex;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -120,7 +122,6 @@ body {
   height: 385px;
   font-size: 18px;
   line-height: 21px;
-  padding: 100px 20px 20px;
   text-align: center;
 }
 
@@ -169,6 +170,7 @@ body {
 .services-item {
   text-align: center;
   height: 385px;
+  width: 400px;
 }
 
 .booking-title {
@@ -204,13 +206,11 @@ body {
 
 .page-footer {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .footer-social {
-  max-width: 165px;
-  margin-right: 250px;
+
 }
 
 .footer-social-list {
@@ -218,7 +218,7 @@ body {
 }
 
 .contacts {
-  max-width: 331px;
+
 }
 
 .contacts-phone {
@@ -231,8 +231,7 @@ body {
 }
 
 .copyright {
-  max-width: 115px;
-  margin-left: auto;
+
 }
 
 .copyright-link {
@@ -294,7 +293,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: flex-start;
   list-style: none;
 
