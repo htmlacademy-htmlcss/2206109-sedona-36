@@ -24,7 +24,9 @@ html {
   height: 100%;
 }
 
-.page-header {}
+.page-header {
+  padding: 0 70px;
+}
 
 .main-index {}
 
@@ -40,7 +42,7 @@ html {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  min-width: 339px;
+
 }
 
 .navigation-link {
@@ -51,6 +53,7 @@ html {
   text-align: left;
   vertical-align: top;
   text-decoration: none;
+  color: #000000;
 }
 
 .navigation-user {
@@ -58,7 +61,7 @@ html {
   padding: 0;
   list-style-type: none;
   display: flex;
-  min-width: 268px;
+
 
 }
 
@@ -119,10 +122,15 @@ body {
 
 .advantages-heading {
   text-align: center;
+  margin: 0 auto 25px;
+  max-width: 620px;
 }
 
 .advantages-description {
   text-align: center;
+  margin: 0 auto 69px;
+  max-width: 651px;
+
 }
 
 .advantages-title {
@@ -132,7 +140,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin: 112px auto 0;
+  margin: 0 auto 62px;
 
 
 }
@@ -140,6 +148,7 @@ body {
 
 .advantages-text {
   margin: 0 auto;
+  max-width: 230px;
 }
 
 .advantages-list {
@@ -160,6 +169,8 @@ body {
 
 .advantages-item--color-blue {
   background: #82b3d3;
+  color: #ffffff;
+
 }
 
 .advantages-item--color-rgba-ligt {
@@ -194,13 +205,20 @@ body {
 
 .services-heading {
   text-align: center;
+  max-width: 505px;
+  margin: 0 auto 20px;
+}
+
+.services-description {
+  margin: 0 auto 64px;
+  text-align: center;
 }
 
 .services-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin-top: 30px;
+  margin: 0 auto 30px;
 
 }
 
@@ -209,6 +227,9 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0 auto;
+  max-width: 230px;
+
 
 }
 
@@ -220,16 +241,15 @@ body {
 
 }
 
-
-
-
 .services-item {
-
   text-align: center;
   height: 385px;
   width: 400px;
   padding-top: 80px;
 }
+
+.services-item-image {
+margin: 0 auto 30px;}
 
 .services-item-color-blue {
   background-color: rgba(131, 179, 211, 0.12);
@@ -249,12 +269,22 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
+  margin: 0 auto 20px;
+  max-width: 297px;
 }
 
 .booking-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0 auto 54px;
+  text-align: center;
+  max-width: 592px;
+}
+
+.booking-link {
+  /* color: #ffffff; */
 }
 
 .subscription {
@@ -271,12 +301,14 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  color: #ffffff;
 }
 
 .subscription-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  color: #ffffff;
 }
 
 .page-footer {
@@ -297,9 +329,14 @@ body {
 }
 
 .footer-social-item {
+  display: flex;
   width: 24px;
   height: 14px;
   margin-right: 26px;
+}
+
+.footer-social-link {
+  display: flex;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -315,6 +352,7 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .copyright {}
@@ -329,13 +367,16 @@ body {
 .inner-header {
   background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
-  padding-top: 35px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0 auto 12px;
+  color: #ffffff;
+  /* max-width: 494px; */
 }
 
 .breadcrumbs-item {
