@@ -285,7 +285,17 @@ body {
 }
 
 .booking-link {
-  /* color: #ffffff; */
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  text-align: center;
+  border: none;
+  padding: 8px 50px;
 }
 
 .subscription {
@@ -313,6 +323,17 @@ body {
   color: #ffffff;
   max-width: 475px;
   margin: 0 auto 54px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.subscription-button {
+
+  height: 52px
 }
 
 .page-footer {
