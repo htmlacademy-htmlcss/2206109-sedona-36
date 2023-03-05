@@ -249,7 +249,8 @@ body {
 }
 
 .services-item-image {
-margin: 0 auto 30px;}
+  margin: 0 auto 30px;
+}
 
 .services-item-color-blue {
   background-color: rgba(131, 179, 211, 0.12);
@@ -302,6 +303,7 @@ margin: 0 auto 30px;}
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
+  margin: 0 auto 20px;
 }
 
 .subscription-text {
@@ -309,6 +311,8 @@ margin: 0 auto 30px;}
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  max-width: 475px;
+  margin: 0 auto 54px;
 }
 
 .page-footer {
@@ -383,6 +387,7 @@ margin: 0 auto 30px;}
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  color: #ffffff;
 }
 
 .breadcrumbs {
@@ -390,10 +395,12 @@ margin: 0 auto 30px;}
   padding: 0;
   list-style-type: none;
   display: flex;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
-  color: #000000;
+  color: #ffffff;
+
 }
 
 .catalog {
@@ -405,7 +412,13 @@ margin: 0 auto 30px;}
 
 .catalog-top {
   display: flex;
+  align-items: center;
 
+}
+
+.select-control {
+  margin: 0 70px 0 auto;
+  padding-bottom: 8px;
 }
 
 .catalog-filter-list {
@@ -429,6 +442,7 @@ margin: 0 auto 30px;}
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #ffffff;
 }
 
 .catalog-filter-item {
@@ -436,6 +450,7 @@ margin: 0 auto 30px;}
   font-size: 18px;
   line-height: 23px;
   margin-right: 70px;
+  color: #ffffff;
 }
 
 .catalog-results {
@@ -472,11 +487,33 @@ margin: 0 auto 30px;}
   width: 340px;
 }
 
+.hotel-card-link {
+  display: flex;
+  flex-direction: column;
+}
 
 .hotel-card-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.hotel-card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotel-card-faivorite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hotel-card-stars-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hotel-card-stars {}
@@ -506,7 +543,7 @@ margin: 0 auto 30px;}
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border: 2px solid #ffffff;
   border-radius: 4px;
   width: 60px;
@@ -514,11 +551,12 @@ margin: 0 auto 30px;}
 }
 
 .pagination-link {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
   text-decoration: none;
   line-height: 36px;
 }
+
 
 .visually-hidden {
   position: absolute;
