@@ -40,8 +40,10 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 100px 114px 124px;
 
 }
 
@@ -285,7 +287,17 @@ body {
 }
 
 .booking-link {
-  /* color: #ffffff; */
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  text-align: center;
+  border: none;
+  padding: 8px 50px;
 }
 
 .subscription {
@@ -313,6 +325,17 @@ body {
   color: #ffffff;
   max-width: 475px;
   margin: 0 auto 54px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.subscription-button {
+
+  height: 52px
 }
 
 .page-footer {
@@ -469,12 +492,10 @@ body {
 .hotel-card {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
   list-style-type: none;
-  gap: 10px;
+  gap: 60px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
 
 }
 
@@ -484,7 +505,7 @@ body {
   height: 385px;
   text-align: center;
   list-style-type: none;
-  width: 340px;
+  width: 300px;
 }
 
 .hotel-card-link {
