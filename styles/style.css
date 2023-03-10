@@ -40,8 +40,10 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 100px 114px 124px;
 
 }
 
@@ -490,12 +492,10 @@ body {
 .hotel-card {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
   list-style-type: none;
-  gap: 10px;
+  gap: 60px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
 
 }
 
