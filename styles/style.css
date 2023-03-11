@@ -64,6 +64,7 @@ html {
   padding: 0;
   list-style-type: none;
   display: flex;
+  gap: 20px;
 
 }
 
@@ -71,8 +72,13 @@ html {
 
 
 .button {
+
   background-color: #756157;
   border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 8px 34px;
+  text-decoration: none;
 }
 
 .navigation-user-link {
@@ -334,7 +340,8 @@ body {
 }
 
 .booking-link {
-
+  display: inline-block;
+  width: 376px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -345,6 +352,8 @@ body {
   text-align: center;
   border: none;
   padding: 8px 50px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .subscription {
@@ -384,9 +393,37 @@ body {
 
 }
 
-.subscription-button {
+.subscription-field {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  width: 452px;
+  background-color: #f2f2f2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: start;
+  color: #000000;
+  cursor: pointer;
+}
 
-  height: 52px
+.subscription-button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px;
+  width: 232px;
+  background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .page-footer {
@@ -551,7 +588,7 @@ body {
 
 .catalog-filter-submit {
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
   padding: 8px 50px;
   margin-left: 70px;
   margin-right: 70px;
@@ -564,14 +601,15 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 
 }
 
 .catalog-filter-reset {
   width: 191px;
   background-color: transparent;
-  border: 1px solid transparent;
-  padding: 8px 50px;
+  border: none;
+  padding: 8px 58px;
   margin-left: 70px;
   margin-right: 70px;
   font-weight: 700;
@@ -580,6 +618,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .hotel-card-title {
@@ -615,6 +654,45 @@ body {
   flex-direction: column;
 }
 
+.hotel-card-button {
+  display: inline-block;
+  width: 140px;
+  background-color: #756157;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hotel-card-button-favorite {
+  display: inline-block;
+  width: 140px;
+  background-color: #82b3d3;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hotel-card-button-favorite-selected {
+  display: inline-block;
+  background-color: #7db54f;
+}
+
 .hotel-card-name {
   width: 140px;
   height: 21px;
@@ -642,12 +720,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .hotel-card-stars-rating {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .hotel-card-stars {}
@@ -689,6 +769,7 @@ body {
   background-color: #82b3d3;
   border: 2px solid #ffffff;
   border-radius: 4px;
+
   width: 60px;
   height: 60px;
 }
