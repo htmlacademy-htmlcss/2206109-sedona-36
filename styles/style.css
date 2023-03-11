@@ -82,6 +82,8 @@ html {
 }
 
 .navigation-user-link {
+  position: relative;
+  display: block;
   min-width: 44px;
   min-height: 64px;
   font-family: "PT Sans";
@@ -90,6 +92,15 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.navigation-user-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .logo {
@@ -366,15 +377,35 @@ body {
   padding-top: 96px;
 }
 
+.subscription-catalog {
+  min-height: 415px;
+  /* background-image: url("../images/background-subscribtion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  margin-top: 104px;
+  text-align: center;
+  padding-top: 96px;
+}
+
 .subscription-heading {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color: #ffffff;
   margin: 0 auto 20px;
   font-style: normal;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.subscription-heading-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  margin: 0 auto 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .subscription-text {
@@ -387,10 +418,19 @@ body {
   text-align: center;
 }
 
+.subscription-text-catalog {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  max-width: 475px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
 .subscription-form {
   display: flex;
   justify-content: center;
-
 }
 
 .subscription-field {
@@ -730,7 +770,10 @@ body {
   gap: 20px;
 }
 
-.hotel-card-stars {}
+.hotel-card-stars {
+  display: block;
+  gap: 6px;
+}
 
 .hotel-card-rating {
   width: 140px;
