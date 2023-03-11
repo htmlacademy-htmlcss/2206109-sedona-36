@@ -26,6 +26,7 @@ html {
 
 .page-header {
   padding: 0 70px;
+
 }
 
 .main-index {}
@@ -78,7 +79,25 @@ html {
   cursor: pointer;
   border: none;
   padding: 8px 34px;
+
   text-decoration: none;
+
+  /* position: relative;
+  display: block; */
+  min-width: 160px;
+  min-height: 36px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.navigation-user-item-button {
+margin-top: 14px;
+margin-right: 70px;
+margin-bottom: 14px;
 }
 
 .navigation-user-link {
@@ -86,12 +105,12 @@ html {
   display: block;
   min-width: 44px;
   min-height: 64px;
-  font-family: "PT Sans";
+  /* font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: #ffffff; */
 }
 
 .navigation-user-icon {
@@ -522,7 +541,9 @@ body {
 .inner-header {
   background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
-  padding: 35px 70px 70px;
+  padding-top: 35px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .inner-header-title {
@@ -567,6 +588,10 @@ body {
 
 }
 
+.control {
+  display: flex;
+  gap: 4px;
+}
 .select-control {
   width: 292px;
   height: 49px;
@@ -583,9 +608,22 @@ body {
 }
 
 .catalog-filter-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+
 }
 
+.catalog-filter-group-price {
+display: flex;
+flex-direction: row;
+}
+
+.text-input {
+
+  width: 143px;
+  height: 48px;
+}
 .catalog-sort-list {
   display: flex;
   margin: 0;
@@ -597,6 +635,7 @@ body {
 
 .catalog-filter {
   display: flex;
+
 }
 
 .catalog-filter-title {
