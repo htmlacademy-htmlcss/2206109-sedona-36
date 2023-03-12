@@ -71,6 +71,17 @@ html {
 
 .navigation-user-item {}
 
+.navigation-user-link-text {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #7DB54F;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+}
 
 .button {
 
@@ -95,9 +106,9 @@ html {
 }
 
 .navigation-user-item-button {
-margin-top: 14px;
-margin-right: 70px;
-margin-bottom: 14px;
+  margin-top: 14px;
+  margin-right: 70px;
+  margin-bottom: 14px;
 }
 
 .navigation-user-link {
@@ -592,6 +603,7 @@ body {
   display: flex;
   gap: 4px;
 }
+
 .select-control {
   width: 292px;
   height: 49px;
@@ -611,12 +623,20 @@ body {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 
 }
 
+.catalog-filter-group {
+border: 0;
+margin: 0;
+padding: 0;
+}
+
 .catalog-filter-group-price {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .text-input {
@@ -624,6 +644,7 @@ flex-direction: row;
   width: 143px;
   height: 48px;
 }
+
 .catalog-sort-list {
   display: flex;
   margin: 0;
