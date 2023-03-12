@@ -20,7 +20,7 @@
               <a class="navigation-link" href="#">О седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current-catalog" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -67,7 +67,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">
+              <a class="breadcrumbs-link breadcrumbs-link-arrow" href="#">
                 <span class="visually-hidden">Стрелка-ссылка на гостиницы</span>
                 <img class="breadcrumbs-icon-arrow" src="images/icons/icon-arrow.svg" width="6" height="10"
                   alt="Стрелка-ссылка на гостиницы..">
@@ -79,7 +79,7 @@
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -102,7 +102,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
+              <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -125,7 +125,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group-price">
-              <legend class="catalog-filter-title">Стоимость,Р</legend>
+              <legend class="catalog-filter-title">Стоимость,Р:</legend>
               <input class="text-input" type="text" name="price-from" value="0" aria-label="Стоимость от 0">
               <input class="text-input" type="text" name="price-to" value="9000" aria-label="Стоимость до">
             </fieldset>
@@ -289,9 +289,7 @@
               </div>
             </li>
           </ul>
-          <span class="border">
 
-          </span>
           <ul class="pagination">
             <li class="pagination-item pagination-current">
               <a class="pagination-link">1</a>
