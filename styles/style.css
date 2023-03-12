@@ -112,6 +112,14 @@ html {
   color: #ffffff;
 }
 
+.button:hover {
+  background-color:#615048;
+}
+
+.button:focus {
+  background-color:#615048;
+}
+
 .navigation-user-item-button {
   display: flex;
 
@@ -420,6 +428,14 @@ body {
   cursor: pointer;
 }
 
+.booking-link:hover {
+background-color: #615048;
+}
+
+.booking-link:focus {
+  background-color: #615048;
+  }
+
 .subscription {
   min-height: 415px;
   background-image: url("../images/background-subscribtion.jpg");
@@ -520,6 +536,14 @@ body {
   cursor: pointer;
 }
 
+.subscription-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-button:focus {
+  background-color: #68A2CA;
+}
+
 .page-footer {
   display: flex;
   justify-content: space-between;
@@ -546,6 +570,15 @@ body {
 
 .footer-social-link {
   display: flex;
+  color:#82b3d3
+}
+
+.footer-social-link:hover {
+  color:#68A2CA;
+}
+
+.footer-social-link:focus {
+  color:#68A2CA;
 }
 
 .footer-social-item:nth-child(3n) {
@@ -564,12 +597,29 @@ body {
   text-decoration: none;
 }
 
-.copyright {}
+.contacts-phone:hover {
+  color: #756157;
+}
+
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.copyright {
+  color: #000000;
+}
 
 .copyright-link {
   color: #000000;
 }
 
+.copyright-link:hover {
+color: #756157;
+}
+
+.copyright-link:focus {
+  color: #756157;
+  }
 /*Catalog*/
 .main-inner {}
 
@@ -674,9 +724,24 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 4px;
 }
 
 .catalog-sort-item {}
+
+.catalog-sort-link {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 48px;
+height: 48px;
+border: 2px solid #000000;
+border-radius: 4px;
+}
+
+.catalog-sort-link--item-sort{
+  border: 2px solid #e5e5e5;
+}
 
 .catalog-filter {
   display: flex;
@@ -777,6 +842,7 @@ body {
 .hotel-card-link {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .hotel-card-button {
