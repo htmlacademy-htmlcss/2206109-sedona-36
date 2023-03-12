@@ -191,6 +191,10 @@ body {
   height: 485px;
 }
 
+.hero::before {
+/* background-image: ; */
+}
+
 /* advantages*/
 
 .advantages {
@@ -230,10 +234,13 @@ body {
   text-transform: uppercase;
   margin: 0 auto 62px;
   max-width: 175px;
-
-
 }
 
+/* .advantages-title::before {
+  border: 2px solid #ffffff;
+  background-color:rgba(255, 255, 255, 0.3);
+  max-width: 60px;
+} */
 
 .advantages-text {
   margin: 0 auto;
@@ -480,8 +487,9 @@ body {
 }
 
 .subscription-field {
+  font-family: inherit;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   border: none;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -498,7 +506,7 @@ body {
 
 .subscription-button {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   border: none;
   padding: 8px 50px;
   width: 232px;
