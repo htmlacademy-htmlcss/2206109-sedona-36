@@ -844,6 +844,7 @@ body {
 
 .catalog-filter-inputs {
   display: flex;
+  gap: 2px;
 }
 
 .text-input__placeholder {
@@ -865,6 +866,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
+  border: 2px solid #f2f2f2;
 
 }
 
@@ -878,6 +880,33 @@ body {
 }
 
 .text-input:active {
+  background-color: #f2f2f2;
+  border: 2px solid #000000;
+}
+
+.text-input-max-value {
+  width: 143px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-radius: 0 4px 4px 0;
+  border: 2px solid #f2f2f2;
+}
+
+.text-input-max-value:hover {
+  background-color: #e6e6e6;
+}
+
+.text-input-max-value:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+}
+
+.text-input-max-value:active {
   background-color: #f2f2f2;
   border: 2px solid #000000;
 }
