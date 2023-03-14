@@ -232,12 +232,16 @@ body {
 }
 
 .hero::before {
+  content:"";
+  height: 57px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-image: url("/images/icons/welcome_vector.svg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   position: absolute;
-  background-color: #ffffff;
 }
 
 /* advantages*/
@@ -1056,6 +1060,8 @@ body {
   width: 300px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  padding: 20px;
+  box-sizing: content-box;
 
 }
 
