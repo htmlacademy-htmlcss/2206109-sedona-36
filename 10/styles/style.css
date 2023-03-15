@@ -115,6 +115,7 @@ html {
   position: absolute;
   top: 11px;
   left: 20px;
+  z-index:10;
 }
 
 .button {
@@ -127,8 +128,6 @@ html {
 
   text-decoration: none;
 
-  /* position: relative;
-  display: block; */
   min-width: 160px;
   min-height: 36px;
   font-family: "PT Sans";
@@ -187,6 +186,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+
 }
 
 body {
@@ -214,6 +214,8 @@ body {
 
   flex-grow: 1;
 }
+
+/* hero */
 
 .hero {
   padding-top: 51px;
