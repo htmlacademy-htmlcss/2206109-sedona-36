@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -115,7 +115,7 @@ html {
   position: absolute;
   top: 11px;
   left: 20px;
-  z-index:10;
+  z-index: 10;
 }
 
 .button {
@@ -186,6 +186,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 
 }
 
@@ -221,7 +222,7 @@ body {
   padding-top: 51px;
   display: flex;
   flex-direction: column;
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -236,7 +237,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url("/images/icons/welcome_vector.svg");
+  background-image: url("../images/icons/welcome_vector.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,9 +533,6 @@ body {
 
 .subscription-catalog {
   min-height: 415px;
-  /* background-image: url("../images/background-subscribtion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; */
   margin-top: 104px;
   text-align: center;
   padding-top: 96px;
@@ -735,7 +733,7 @@ body {
   line-height: 78px;
   margin: 0 auto 12px;
   color: #ffffff;
-  /* max-width: 494px; */
+
 }
 
 .breadcrumbs-item {
@@ -836,7 +834,7 @@ body {
   left: 2px;
   width: 12px;
   height: 2px;
-  background-image: url("/images/icons/checkbox.svg");
+  background-image: url("../images/icons/checkbox.svg");
   background-color: #3f5e72;
   content: "";
 }
@@ -907,6 +905,8 @@ body {
 .catalog-filter-group-price {
   display: flex;
   flex-direction: column;
+  border: none;
+  padding: 0;
 
 
 }
@@ -921,6 +921,7 @@ body {
 .catalog-filter-inputs {
   display: flex;
   gap: 2px;
+  margin-bottom: 48px;
 }
 
 .text-input__placeholder {
@@ -932,7 +933,7 @@ body {
 }
 
 .text-input {
-
+  font-family: inherit;
   width: 143px;
   height: 48px;
   font-style: normal;
@@ -943,6 +944,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: 2px solid #f2f2f2;
+  padding-left: 20px;
 
 }
 
@@ -961,6 +963,7 @@ body {
 }
 
 .text-input-max-value {
+  font-family: inherit;
   width: 143px;
   height: 48px;
   font-style: normal;
@@ -971,6 +974,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 0 4px 4px 0;
   border: 2px solid #f2f2f2;
+  padding-left: 20px;
 }
 
 .text-input-max-value:hover {
@@ -1089,8 +1093,9 @@ body {
   position: relative;
   height: 4px;
   margin-bottom: 16px;
-  background-color: #ffffff;
-  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+
 }
 
 .range-bar {
@@ -1124,7 +1129,7 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: 0;
 
 }
 
