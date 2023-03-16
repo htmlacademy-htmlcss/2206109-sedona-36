@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -68,19 +68,20 @@ html {
 .navigation-link-current::after {
   position: absolute;
   right: 16px;
-  bottom: 0;
+  bottom: -2px;
   left: 16px;
   height: 2px;
   width: 68px;
   content: "";
   border: 2px solid #756257;
+  z-index: 1;
 
 }
 
 .navigation-link-current-catalog::after {
   position: absolute;
   right: 16px;
-  bottom: 0;
+  bottom: -2px;
   left: 16px;
   height: 0;
   width: 93px;
@@ -115,7 +116,7 @@ html {
   position: absolute;
   top: 11px;
   left: 20px;
-  z-index:10;
+  z-index: 10;
 }
 
 .button {
@@ -186,6 +187,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 
 }
 
@@ -221,7 +223,7 @@ body {
   padding-top: 51px;
   display: flex;
   flex-direction: column;
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -236,7 +238,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url("/images/icons/welcome_vector.svg");
+  background-image: url("../images/icons/welcome_vector.svg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,9 +534,6 @@ body {
 
 .subscription-catalog {
   min-height: 415px;
-  /* background-image: url("../images/background-subscribtion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; */
   margin-top: 104px;
   text-align: center;
   padding-top: 96px;
@@ -735,7 +734,7 @@ body {
   line-height: 78px;
   margin: 0 auto 12px;
   color: #ffffff;
-  /* max-width: 494px; */
+
 }
 
 .breadcrumbs-item {
@@ -821,26 +820,29 @@ body {
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
-  border-color: #814b18;
-}
+
 
 .control-input:disabled + .control-mark {
   border-color: #242424;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 7px;
+  top: 3px;
   left: 2px;
-  width: 12px;
-  height: 2px;
-  background-image: url("/images/icons/checkbox.svg");
-  background-color: #3f5e72;
+  width: 13px;
+  height: 11px;
+  background-image: url("../images/icons/checkbox.svg");
+
   content: "";
 }
+.control-input[type="checkbox"]:focus+ .control-mark {
+  outline: 3px solid #83b3d3;
+}
 
+.control-input[type="checkbox"]:hover+ .control-mark {
+  opacity: 0.6;
+}
 /* Radio */
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
@@ -848,8 +850,9 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
   background-color: #3f5e72;
@@ -857,7 +860,13 @@ body {
   content: "";
 }
 
+.control-input[type="radio"]:focus+ .control-mark {
+  outline: 3px solid #83b3d3;
+}
 
+.control-input[type="radio"]:hover+ .control-mark {
+  opacity: 0.6;
+}
 
 .control-radio {
   display: flex;
@@ -907,6 +916,8 @@ body {
 .catalog-filter-group-price {
   display: flex;
   flex-direction: column;
+  border: none;
+  padding: 0;
 
 
 }
@@ -921,6 +932,7 @@ body {
 .catalog-filter-inputs {
   display: flex;
   gap: 2px;
+  margin-bottom: 48px;
 }
 
 .text-input__placeholder {
@@ -932,7 +944,7 @@ body {
 }
 
 .text-input {
-
+  font-family: inherit;
   width: 143px;
   height: 48px;
   font-style: normal;
@@ -943,6 +955,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: 2px solid #f2f2f2;
+  padding-left: 20px;
 
 }
 
@@ -961,6 +974,7 @@ body {
 }
 
 .text-input-max-value {
+  font-family: inherit;
   width: 143px;
   height: 48px;
   font-style: normal;
@@ -971,6 +985,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 0 4px 4px 0;
   border: 2px solid #f2f2f2;
+  padding-left: 20px;
 }
 
 .text-input-max-value:hover {
@@ -1089,8 +1104,9 @@ body {
   position: relative;
   height: 4px;
   margin-bottom: 16px;
-  background-color: #ffffff;
-  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+
 }
 
 .range-bar {
@@ -1124,7 +1140,7 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: 0;
 
 }
 
