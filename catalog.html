@@ -428,59 +428,92 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
 
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group appointment-form-date">
+              <label class="field-group appointment-form-date">
 
-                <label class="form-label" for="appointment-date">
-                  Дата Заезда:</label>
+                <span class="form-label">
+                  Дата Заезда:</span>
 
-                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
+                <input class="field" type="text" id="appointment-date" name="appointment-date"
+                  placeholder="27 апреля 2020">
 
+              </label>
+              <label class="field-group appointment-form-date">
 
+                <span class="form-label">
+                  Дата Выезда:</span>
+                <input class="field" type="text" id="appointment-date" name="appointment-date"
+                  placeholder="1 сентября 2021">
 
-
-                <!-- <span class="appointment-date-text">Мы не можем отправить вас в прошлое</span>  -->
-              </p>
-              <p class="field-group appointment-form-date">
-
-                <label class="form-label" for="appointment-date">
-                  Дата Выезда:</label>
-                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="1 сентября 2021">
-
-
-                <!-- <span class="appointment-date-text">На эти даты есть свободные номера. Пока есть</span> -->
-              </p>
+              </label>
 
               <div class="appointment-form-adults-content">
-                <p class="field-group appointment-form-adults">
-                  <label class="form-label" for="appointment-adults">
+                <label class="field-group appointment-form-adults">
+                  <span class="form-label">
                     Взрослые:
-                  </label>
-                  <input class="field-appointment-form-content" type="text" id="appointment-adults"
-                    name="appointment-form-adults">
-                </p>
-                <p class="field-group appointment-form-children">
-                  <label class="form-label" for="appointment-children">
-                    Дети:
-                  </label>
-                  <input class="field-appointment-form-content" type="text" id="appointment-children"
-                    name="appointment-form-children">
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
-
-                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                          fill="white" />
-                      </svg>
+                  </span>
+                  <div class="form-input-wrapper">
+                    <button type="button" class="form-input-number-control form-input-number-control--minus">
+                      <span class="visually-hidden">minus</span>
                     </button>
-                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
-                      18 лет. Дети до 18 лет размещаются бесплатно.</span>
-                  </span>
+                    <button type="button" class="form-input-number-control form-input-number-control--plus">
+                      <span class="visually-hidden">plus</span>
+                    </button>
+                    <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
+                      id="appointment-adults" name="appointment-form-adults">
+                  </div>
+                </label>
+                <div class="field-group appointment-form-children">
+                  <label class="form-label form-label--content" for="appointment-children">
+                    Дети:
+                    <div class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                        18 лет. Дети до 18 лет размещаются бесплатно.</span>
+                    </div>
+                  </label>
+                  <div class="form-input-wrapper">
+                    <button type="button" class="form-input-number-control form-input-number-control--minus">
+                      <span class="visually-hidden">minus</span>
+                    </button>
+                    <button type="button" class="form-input-number-control form-input-number-control--plus">
+                      <span class="visually-hidden">plus</span>
+                    </button>
+                    <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
+                      id="appointment-children" name="appointment-form-children">
+                  </div>
                   </span>
 
-                </p>
+                </div>
               </div>
+
+              <script>
+                const minusButtons = document.querySelectorAll('.form-input-number-control--minus');
+
+                minusButtons.forEach((button) => {
+                  button.addEventListener('click', () => {
+                    const input = button.parentNode.querySelector('input');
+
+                    input.value = Math.max(0, Number(input.value) - 1);
+                  });
+                });
+
+                const plusButtons = document.querySelectorAll('.form-input-number-control--plus');
+
+                plusButtons.forEach((button) => {
+                  button.addEventListener('click', () => {
+                    const input = button.parentNode.querySelector('input');
+
+                    input.value = Math.min(99, Number(input.value) + 1);
+                  });
+                });
+              </script>
 
               <button class="appointment-button" type="submit">Найти</button>
             </form>
