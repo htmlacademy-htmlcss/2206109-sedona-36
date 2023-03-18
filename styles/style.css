@@ -601,6 +601,7 @@ body {
   text-align: start;
   color: #000000;
   cursor: pointer;
+
 }
 
 .subscription-button {
@@ -1115,6 +1116,11 @@ body {
   background-color: #ffffff;
 }
 
+.range-bar:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -1126,8 +1132,9 @@ body {
 }
 
 .range-toggle:hover {
-  background-color: #ffffff;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 .range-toggle:active,
@@ -1490,3 +1497,42 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.appointment-form-adults-content {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+}
+
+.form-label {
+
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 24px;
+
+}
+
+/* .appointment-date-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21;
+  color: #ff5757;
+
+} */
+/*
+.appointment-button {
+  width: 577px;
+  background-color: transparent;
+  border: none;
+  padding: 8px 58px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+} */
