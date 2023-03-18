@@ -73,6 +73,46 @@
   text-transform: uppercase;
 }
 
+.form-label {
+  align-self: center;
+}
+
+.field {
+  background-image: url("../images/icons/icon-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #000000;
+  width: 440px;
+  height: 48px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding:12px, 20px, 12px, 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24;
+  color: #000000;
+  border: none;
+
+}
+
+.field-appointment-form-content {
+  width: 111px;
+  height: 48px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+
+}
+
+
+.field-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 48px;
+
+}
+
 .tooltip-text {
   background-color: #333333;
   color: #ffffff;
@@ -90,6 +130,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  display: none;
 }
 
 .tooltip-toggle {
@@ -100,9 +141,59 @@
   display: block;
 }
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  transform: rotate(180deg);
+  top: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tooltip-icon {
   width: 100%;
   height: 100%;
   color: #242424;
   display: block;
 }
+
+.tooltip {
+  position: absolute;
+
+  margin-bottom: 16px;
+  width: 256px;
+  height: 143px;
+}
+
+/* .appointment-date-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21;
+  color: #ff5757;
+
+} */
+
+/* .appointment-button {
+  width: 577px;
+  background-color: transparent;
+  border: none;
+  padding: 8px 58px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+} */
