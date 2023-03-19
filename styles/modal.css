@@ -1,7 +1,5 @@
 .modal {
   position: fixed;
-
-
   left: 0;
   right: 0;
   bottom: 0;
@@ -19,7 +17,6 @@
   bottom: 0;
   top: 0;
   background: rgba(242, 242, 242, 0.8);
-
 }
 
 .modal__body {
@@ -52,8 +49,6 @@
   background-image: url(../icons/closure.svg);
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 
 .modal_content {}
