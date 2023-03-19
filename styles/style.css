@@ -1664,3 +1664,14 @@ body {
 .appointment-button:active {
   background-color: #68a2ca;
 }
+
+.appointment-text-error {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ff5757;
+}
+
+.text-error-checkout {
+  color: #333333;
+}

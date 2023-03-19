@@ -204,7 +204,7 @@
 
 <!-- Для того чтобы открыть модальное окно необходимо добавить класс is_active -->
 
-    <div class="modal">
+    <div class="modal is_active">
       <div class="modal__overlay">
       </div>
       <div class="modal__body">
@@ -212,7 +212,7 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal_content">
-          <section class="modal-content">
+
             <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
 
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -220,22 +220,25 @@
 
                 <span class="form-label">
                   Дата Заезда:</span>
-
                 <input class="field" type="text" id="appointment-date" name="appointment-date"
                   placeholder="27 апреля 2020">
 
+                   <span class="appointment-text-error">Мы не можем отправить вас в прошлое</span>
+
               </label>
+
               <label class="field-group appointment-form-date">
 
                 <span class="form-label">
                   Дата Выезда:</span>
                 <input class="field" type="text" id="appointment-date" name="appointment-date"
                   placeholder="1 сентября 2021">
-                  <!-- <span>Мы не можем отправить вас в прошлое</span> -->
+                 <span class="appointment-text-error text-error-checkout ">На эти даты есть свободные номера. Пока есть.</span>
 
               </label>
 
               <div class="appointment-form-adults-content">
+
                 <label class="field-group appointment-form-adults">
                   <span class="form-label">
                     Взрослые:
@@ -250,11 +253,13 @@
                     <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
                       id="appointment-adults" name="appointment-form-adults">
                   </div>
+
                 </label>
+
                 <div class="field-group appointment-form-children">
                   <label class="form-label form-label--content" for="appointment-children">
                     Дети:
-                    <div class="tooltip">
+                    <p class="tooltip">
                       <button class="tooltip-toggle" type="button">
                         <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +270,7 @@
                       </button>
                       <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
                         18 лет. Дети до 18 лет размещаются бесплатно.</span>
-                    </div>
+                      </p>
                   </label>
                   <div class="form-input-wrapper">
                     <button type="button" class="form-input-number-control form-input-number-control--minus">
@@ -310,6 +315,7 @@
       </div>
 
     </div>
+  </section>
     <script>
       const modal = document.querySelector('.modal');
       document.querySelector('#search').addEventListener('click', () => {
