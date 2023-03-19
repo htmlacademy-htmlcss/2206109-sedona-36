@@ -6,6 +6,7 @@
     <title>Sedona</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
+
   <body>
     <div class="container">
       <header class="page-header">
@@ -202,7 +203,7 @@
       </footer>
     </div>
 
-<!-- Для того чтобы открыть модальное окно необходимо добавить класс is_active -->
+    <!-- Для того чтобы открыть модальное окно необходимо добавить класс is_active -->
 
     <div class="modal is_active">
       <div class="modal__overlay">
@@ -212,118 +213,116 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal_content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
 
-            <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="field-group appointment-form-date">
 
-            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="field-group appointment-form-date">
-
-                <span class="form-label">
-                  Дата Заезда:</span>
+              <span class="form-label">
+                Дата Заезда:</span>
+              <span>
                 <input class="field" type="text" id="appointment-date" name="appointment-date"
                   placeholder="27 апреля 2020">
+                <span class="appointment-text-error">Мы не можем отправить вас в прошлое</span>
+              </span>
 
-                   <span class="appointment-text-error">Мы не можем отправить вас в прошлое</span>
+            </label>
 
-              </label>
+            <label class="field-group appointment-form-date">
 
-              <label class="field-group appointment-form-date">
+              <span class="form-label">
+                Дата Выезда:</span>
+              <span>
+                <input class="field" type="text" id="checkout-date" name="checkout-date" placeholder="1 сентября 2021">
+                <span class="appointment-text-error text-error-checkout ">На эти даты есть свободные номера. Пока
+                  есть.</span>
+              </span>
 
-                <span class="form-label">
-                  Дата Выезда:</span>
-                <input class="field" type="text" id="appointment-date" name="appointment-date"
-                  placeholder="1 сентября 2021">
-                 <span class="appointment-text-error text-error-checkout ">На эти даты есть свободные номера. Пока есть.</span>
+            </label>
 
-              </label>
+            <div class="appointment-form-adults-content">
 
-              <div class="appointment-form-adults-content">
-
-                <label class="field-group appointment-form-adults">
-                  <span class="form-label">
-                    Взрослые:
-                  </span>
-                  <div class="form-input-wrapper">
-                    <button type="button" class="form-input-number-control form-input-number-control--minus">
-                      <span class="visually-hidden">minus</span>
-                    </button>
-                    <button type="button" class="form-input-number-control form-input-number-control--plus">
-                      <span class="visually-hidden">plus</span>
-                    </button>
-                    <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
-                      id="appointment-adults" name="appointment-form-adults">
-                  </div>
-
+              <div class="field-group appointment-form-adults">
+                <label class="form-label" for="appointment-adults">
+                  Взрослые:
                 </label>
+                <span class="form-input-wrapper">
+                  <button type="button" class="form-input-number-control form-input-number-control--minus">
+                    <span class="visually-hidden">minus</span>
+                  </button>
+                  <button type="button" class="form-input-number-control form-input-number-control--plus">
+                    <span class="visually-hidden">plus</span>
+                  </button>
+                  <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
+                    id="appointment-adults" name="appointment-form-adults">
+                </span>
 
-                <div class="field-group appointment-form-children">
-                  <label class="form-label form-label--content" for="appointment-children">
-                    Дети:
-                    <p class="tooltip">
-                      <button class="tooltip-toggle" type="button">
-                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                            fill="white" />
-                        </svg>
-                      </button>
-                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
-                        18 лет. Дети до 18 лет размещаются бесплатно.</span>
-                      </p>
-                  </label>
-                  <div class="form-input-wrapper">
-                    <button type="button" class="form-input-number-control form-input-number-control--minus">
-                      <span class="visually-hidden">minus</span>
-                    </button>
-                    <button type="button" class="form-input-number-control form-input-number-control--plus">
-                      <span class="visually-hidden">plus</span>
-                    </button>
-                    <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
-                      id="appointment-children" name="appointment-form-children">
-                  </div>
-                  </span>
-
-                </div>
               </div>
 
-              <script>
-                const minusButtons = document.querySelectorAll('.form-input-number-control--minus');
+              <div class="field-group appointment-form-children">
+                <div class="form-label form-label--content">
+                  <label for="appointment-children">Дети:</label>
+                  <div class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                      18 лет. Дети до 18 лет размещаются бесплатно.</span>
+                  </div>
+                </div>
+                <div class="form-input-wrapper">
+                  <button type="button" class="form-input-number-control form-input-number-control--minus">
+                    <span class="visually-hidden">minus</span>
+                  </button>
+                  <button type="button" class="form-input-number-control form-input-number-control--plus">
+                    <span class="visually-hidden">plus</span>
+                  </button>
+                  <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
+                    id="appointment-children" name="appointment-form-children">
+                </div>
+              </div>
+            </div>
 
-                minusButtons.forEach((button) => {
-                  button.addEventListener('click', () => {
-                    const input = button.parentNode.querySelector('input');
+            <script>
+              const minusButtons = document.querySelectorAll('.form-input-number-control--minus');
 
-                    input.value = Math.max(0, Number(input.value) - 1);
-                  });
+              minusButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                  const input = button.parentNode.querySelector('input');
+
+                  input.value = Math.max(0, Number(input.value) - 1);
                 });
+              });
 
-                const plusButtons = document.querySelectorAll('.form-input-number-control--plus');
+              const plusButtons = document.querySelectorAll('.form-input-number-control--plus');
 
-                plusButtons.forEach((button) => {
-                  button.addEventListener('click', () => {
-                    const input = button.parentNode.querySelector('input');
+              plusButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                  const input = button.parentNode.querySelector('input');
 
-                    input.value = Math.min(99, Number(input.value) + 1);
-                  });
+                  input.value = Math.min(99, Number(input.value) + 1);
                 });
-              </script>
+              });
+            </script>
 
-              <button class="appointment-button" type="submit">Найти</button>
-            </form>
-
+            <button class="appointment-button" type="submit">Найти</button>
+          </form>
+        </section>
       </div>
-
     </div>
-  </section>
     <script>
       const modal = document.querySelector('.modal');
       document.querySelector('#search').addEventListener('click', () => {
-        modal.hidden = false;
+        modal.classList.add('is_active');
       });
 
       document.querySelector('#search-close').addEventListener('click', () => {
-        modal.hidden = true;
+        modal.classList.remove('is_active');
       });
     </script>
 

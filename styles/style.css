@@ -730,6 +730,7 @@ body {
 
 .breadcrumbs-link {
   color: #ffffff;
+  text-decoration: none;
   transition: opacity 0.3s;
 }
 
@@ -1413,6 +1414,18 @@ body {
   overflow: hidden;
 }
 
+@keyframes show-modal-overlay {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -1571,8 +1584,8 @@ body {
   border-radius: 10px;
   width: 256px;
   position: absolute;
-  bottom: 100%;
-  margin-bottom: 6px;
+  top: 100%;
+  margin-top: 6px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1594,12 +1607,11 @@ body {
 
 .tooltip-text:after {
   content: '';
-  background-image: url("../images/tooltip-arrow.svg");
+  background: url("../images/tooltip-arrow.svg") no-repeat;
   width: 19px;
   height: 9px;
   position: absolute;
-  transform: rotate(180deg);
-  top: 100%;
+  bottom: 100%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -1625,17 +1637,16 @@ body {
 }
 
 .form-label {
-  align-self: center;
   font-size: 20px;
   font-weight: 700;
   color: #000000;
   line-height: 24px;
+  padding: 12px 0 0;
   width: 140px;
   flex-shrink: 0;
 }
 
 .form-label--content {
-  align-items: center;
   display: flex;
   gap: 10px;
 }
@@ -1670,6 +1681,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
+  margin: 0 0 0 12px;
 }
 
 .text-error-checkout {
