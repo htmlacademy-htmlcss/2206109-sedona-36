@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/modal.css">
   </head>
   <body>
     <div class="container">
@@ -25,7 +24,7 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
+              <a class="navigation-user-link" href="#" id="search">
                 <span class="visually-hidden">Поиск</span>
                 <svg class="navigation-user-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
@@ -202,6 +201,127 @@
         </section>
       </footer>
     </div>
+
+<!-- Для того чтобы открыть модальное окно необходимо добавить класс is_active -->
+
+    <div class="modal">
+      <div class="modal__overlay">
+      </div>
+      <div class="modal__body">
+        <button class="modal__close" type="button" id="search-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal_content">
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне </h2>
+
+            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="field-group appointment-form-date">
+
+                <span class="form-label">
+                  Дата Заезда:</span>
+
+                <input class="field" type="text" id="appointment-date" name="appointment-date"
+                  placeholder="27 апреля 2020">
+
+              </label>
+              <label class="field-group appointment-form-date">
+
+                <span class="form-label">
+                  Дата Выезда:</span>
+                <input class="field" type="text" id="appointment-date" name="appointment-date"
+                  placeholder="1 сентября 2021">
+                  <!-- <span>Мы не можем отправить вас в прошлое</span> -->
+
+              </label>
+
+              <div class="appointment-form-adults-content">
+                <label class="field-group appointment-form-adults">
+                  <span class="form-label">
+                    Взрослые:
+                  </span>
+                  <div class="form-input-wrapper">
+                    <button type="button" class="form-input-number-control form-input-number-control--minus">
+                      <span class="visually-hidden">minus</span>
+                    </button>
+                    <button type="button" class="form-input-number-control form-input-number-control--plus">
+                      <span class="visually-hidden">plus</span>
+                    </button>
+                    <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
+                      id="appointment-adults" name="appointment-form-adults">
+                  </div>
+                </label>
+                <div class="field-group appointment-form-children">
+                  <label class="form-label form-label--content" for="appointment-children">
+                    Дети:
+                    <div class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                        18 лет. Дети до 18 лет размещаются бесплатно.</span>
+                    </div>
+                  </label>
+                  <div class="form-input-wrapper">
+                    <button type="button" class="form-input-number-control form-input-number-control--minus">
+                      <span class="visually-hidden">minus</span>
+                    </button>
+                    <button type="button" class="form-input-number-control form-input-number-control--plus">
+                      <span class="visually-hidden">plus</span>
+                    </button>
+                    <input class="field-appointment-form-content" type="text" maxlength="2" readonly value="0"
+                      id="appointment-children" name="appointment-form-children">
+                  </div>
+                  </span>
+
+                </div>
+              </div>
+
+              <script>
+                const minusButtons = document.querySelectorAll('.form-input-number-control--minus');
+
+                minusButtons.forEach((button) => {
+                  button.addEventListener('click', () => {
+                    const input = button.parentNode.querySelector('input');
+
+                    input.value = Math.max(0, Number(input.value) - 1);
+                  });
+                });
+
+                const plusButtons = document.querySelectorAll('.form-input-number-control--plus');
+
+                plusButtons.forEach((button) => {
+                  button.addEventListener('click', () => {
+                    const input = button.parentNode.querySelector('input');
+
+                    input.value = Math.min(99, Number(input.value) + 1);
+                  });
+                });
+              </script>
+
+              <button class="appointment-button" type="submit">Найти</button>
+            </form>
+
+      </div>
+
+    </div>
+    <script>
+      const modal = document.querySelector('.modal');
+      document.querySelector('#search').addEventListener('click', () => {
+        modal.hidden = false;
+      });
+
+      document.querySelector('#search-close').addEventListener('click', () => {
+        modal.hidden = true;
+      });
+    </script>
+
+
   </body>
 
 </html>
