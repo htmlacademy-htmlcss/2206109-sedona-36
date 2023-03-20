@@ -67,21 +67,10 @@ html {
   bottom: -2px;
   left: 16px;
   height: 2px;
-  width: 68px;
+  width: auto;
   content: "";
   border: 2px solid #756257;
   z-index: 1;
-}
-
-.navigation-link-current-catalog::after {
-  position: absolute;
-  right: 16px;
-  bottom: -2px;
-  left: 16px;
-  height: 0;
-  width: 93px;
-  content: "";
-  border: 2px solid #756257;
 }
 
 .navigation-user {
@@ -297,6 +286,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  padding: 20px 0;
 }
 
 .advantages-text--color-blue {
@@ -371,6 +361,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  padding: 20px 0;
 }
 
 .services-title {
@@ -391,6 +382,7 @@ body {
   margin: 0 auto;
   max-width: 230px;
   color: #333333;
+  padding: 20px 0;
 }
 
 .services-list {
@@ -738,13 +730,9 @@ body {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-arrow {
+.breadcrumbs-icon-arrow {
   margin-left: 11px;
   margin-right: 11px;
-}
-
-.breadcrumbs-link-arrow {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .catalog {
@@ -1369,7 +1357,6 @@ body {
 
 .pagination-link:focus {
   background-color: #68a2ca;
-  outline: 1px solid #82b3d3;
 }
 
 .pagination-link:active {
